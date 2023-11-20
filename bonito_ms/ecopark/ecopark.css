@@ -108,3 +108,74 @@ section {
     margin-bottom: 20px;
     border: 2px solid #333;
 }
+
+/* Estilos para o formulário de avaliação */
+.avaliacao {
+    text-align: center;
+    background-color: #f5f5f5;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #11111f;
+    padding: 20px;
+}
+
+.avaliacao h3 {
+    color: #11111f;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.avaliacao label {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.avaliacao input {
+    padding: 8px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.avaliacao input[type="number"] {
+    width: 50px;
+}
+
+.avaliacao button {
+    padding: 10px 20px;
+    background-color: #47d7ac;
+    color: #11111f;
+    border: 2px solid #11111f;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.avaliacao button:hover {
+    background-color: #11111f;
+    color: #ffffff;
+}
+
+/* Estilos para o histórico de avaliações */
+#historico-avaliacoes {
+    margin-top: 20px;
+}
+
+#historico-avaliacoes h4 {
+    color: #11111f;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#historico-avaliacoes p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Estilos para a média de avaliações */
+#media-avaliacoes h4 {
+    color: #11111f;
+    font-size: 20px;
+    margin-top: 20px;
+}

@@ -285,6 +285,7 @@ footer p {
 }
 /* Adicione o estilo para o formulário de cadastro */
 .cadastro {
+    background-color: white;
     position: relative;
     overflow: hidden;
     border: 2px solid #333;
