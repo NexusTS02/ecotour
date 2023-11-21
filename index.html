@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
 
     <header>
@@ -15,28 +17,26 @@
             <h1 style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">EcoTour</h1>
         </div>
     </header>
-    
+        <nav class="menu">
+            <ul>
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="../../dicas_eco.html">Dicas Eco</a></li>
+                <li class="submenu">
+                    <a href="#">Locais Turísticos</a>
+                    <ul class="submenu-list">
+                        <!-- Links para destinos turísticos específicos -->
+                        <li><a href="pontos turisticos/bonito_ms/bonito_ms.html">Bonito-MS</a></li>
+                        <li><a href="pontos turisticos/jalapao_to/jalapao.html">Jalapão-TO</a></li>
+                        <li><a href="pontos turisticos/chapada_ba/chapada.html">Chapada Diamantina-BA</a></li>
+                        <li><a href="pontos turisticos/lençois maranhenses/lencois.html">Lençóis Maranhenses-MA</a></li>
+                        <li><a href="pontos turisticos/serra do cipo/serra_cipo.html">Serra do Cipo-MG</a></li>
+                        <li><a href="pontos turisticos/ilha grande/ilha_grande.html">Ilha Grande-RJ</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../nossa_missao.html">Nossa Missão</a></li>
+            </ul>
+        </nav>
 
-   
-    <nav class="menu">
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="dicas_eco.html">Dicas Eco</a></li>
-            <li class="submenu">
-                <a href="#">Locais Turísticos</a>
-                <ul class="submenu-list">
-                    <li><a href="bonito_ms/bonito_ms.html">Bonito-MS</a></li>
-                    <li><a href="destino2.html">Jalapão-TO</a></li>
-                    <li><a href="destino3.html">Chapada Diamantina-BA</a></li>
-                    <li><a href="destino4.html">Lençóis Maranhenses-MA</a></li>
-                    <li><a href="destino5.html">Serra do Cipo-MG</a></li>
-                    <li><a href="destino6.html">Ilha Grande-RJ</a></li>
-                </ul>
-            </li>
-            <li><a href="nossa_missao.html">Nossa Missão</a></li>
-        </ul>
-    </nav>
-   
     <main>
         <div class="destaques-container">
             <section id="destaques" class="content-block">
@@ -46,17 +46,13 @@
                 </p>
             </section>
         </div>
-    
+
         <div class="destinos-container">
             <section id="destinos" class="container">
                 <h2>Alguns dos  Pontos Turísticos Sustentáveis</h2>
-                <div class="destinos-wrapper">
-                    <!-- Conteúdo dos destinos será inserido dinamicamente aqui -->
-                </div>
-                <div id="destaques-carousel" class="destinos-wrapper">
+                <div class="destinos-wrapper" id="destaques-carousel">
                     <!-- O conteúdo do carrossel será inserido dinamicamente aqui -->
                 </div>
-            
             </section>
         </div>
     </main>
@@ -67,12 +63,13 @@
         <form id="formCadastro">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
-    
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-    
+
             <input type="submit" value="Cadastrar">
         </form>
+        <div id="mensagemCadastro"></div>
     </div>
 
     <footer>
@@ -116,13 +113,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const h3Element = document.createElement("h3");
         h3Element.textContent = destino.nome;
 
-        const saibaMaisLinkElement = document.createElement("a");
-        saibaMaisLinkElement.href = `destino${index + 1}.html`;
-        saibaMaisLinkElement.textContent = "Saiba mais";
-
         destinoInfoElement.appendChild(h3Element);
-        destinoInfoElement.appendChild(saibaMaisLinkElement);
-
+        
         destinoElement.appendChild(imagemElement);
         destinoElement.appendChild(destinoInfoElement);
 
@@ -144,32 +136,45 @@ function shuffle(array) {
 
     return array;
 }
+        </script>
+        <script>
+        // Adicione um ouvinte de evento para o formulário de cadastro
+        document.getElementById("formCadastro").addEventListener("submit", function (event) {
+            event.preventDefault(); // Evitar o envio padrão do formulário
 
+            const formData = new FormData(event.target);
+            const formDataObject = {};
+            formData.forEach((value, key) => {
+                formDataObject[key] = value;
+            });
+            formDataObject['to_email'] = formDataObject['email'];
 
-document.addEventListener("DOMContentLoaded", function () {
-            // Adicione um ouvinte de evento para o formulário de cadastro
-            document.getElementById("formCadastro").addEventListener("submit", function (event) {
-                event.preventDefault(); // Evitar o envio padrão do formulário
-
-                // Obter dados do formulário
-                const formData = new FormData(event.target);
-
-                // Enviar solicitação POST para o servidor
-                fetch('http://localhost:3000/cadastrar', {
+            fetch('https://api.emailjs.com/api/v1.0/email/send', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
+                        'Authorization': 'Bearer ldUsNybHIOnWuyVTjj71O',
                     },
-                    body: JSON.stringify(Object.fromEntries(formData)),
+                    body: JSON.stringify({
+                        service_id: 'service_331xctp',
+                        template_id: 'template_1gppz0c',
+                        user_id: '2G2FSrvtmCFzuryUq',
+                        template_params: formDataObject,
+                    }),
                 })
                 .then(response => response.json())
                 .then(data => {
-                    alert(data); // Exibir uma mensagem de sucesso ou erro para o usuário
+                    const mensagemCadastro = document.getElementById("mensagemCadastro");
+                    if (data.success) {
+                        mensagemCadastro.textContent = "Cadastro realizado com sucesso! Um email foi enviado para " + formDataObject['email'];
+                        document.getElementById("formCadastro").reset(); // Limpa os campos do formulário
+                    } else {
+                        mensagemCadastro.textContent = "Erro ao cadastrar. Tente novamente.";
+                    }
                 })
                 .catch(error => {
                     console.error('Erro:', error);
                 });
-            });
         });
     </script>
 
