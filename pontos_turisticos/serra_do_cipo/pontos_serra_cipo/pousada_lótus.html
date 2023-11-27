@@ -47,14 +47,14 @@
 
     <!-- Seção principal da página -->
     <section>
-        <!-- Quadrado - Eco Park Porto da Ilha -->
+        <!-- Quadrado - Pousada Flor de Lótus Cipó -->
         <div class="quadrado centralizado">
             <div class="conteudo">
-                <!-- Título e imagem do Eco Park -->
+                <!-- Título e imagem da Pousada Flor de Lótus Cipó -->
                 <h3>Pousada Flor de Lótus Cipó</h3>
                 <img src="../../../imagens/pontos turisticos/serra do cipo/pousada lotus/3.jpg" alt="Pousada Flor de Lótus Cipó">
                 <div class="overlay">
-                    <!-- Descrição e informações sobre o Eco Park -->
+                    <!-- Descrição e informações sobre a Pousada Flor de Lótus Cipó -->
                     <h1>Sustentabilidade na Pousada Flor de Lótus Cipó</h1>
 
                     <p>A Pousada Flor de Lótus Cipó demonstra um compromisso notável com práticas sustentáveis na deslumbrante Serra do Cipó. A pousada destaca-se por suas ações para preservar o ambiente e enaltecer a beleza da região.</p>
@@ -79,51 +79,51 @@
             </div>
         </div>
 
-        <!-- Mapa do Eco Park -->
+        <!-- Mapa da Pousada Flor de Lótus Cipó -->
         <div class="mapa centralizado">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d791.5187140000485!2d-43.61104032157442!3d-19.320652902580594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa5f03a571f86ed%3A0x1076dd61f664866a!2sPOUSADA%20FLOR%20DE%20L%C3%93TUS!5e0!3m2!1spt-BR!2sbr!4v1700670841882!5m2!1spt-BR!2sbr"width="100%" height="300" style="border: 0px solid #333;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
+
    <!-- Seção de Avaliação -->
-<section class="avaliacao">
-    <!-- Título da seção de avaliação -->
-    <h3>Avalie a Pousada Flor de Lótus Cipó</h3>
-    <p>Deixe sua avaliação:</p>
-    <div>
-        <!-- Formulário de avaliação -->
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" placeholder="Seu nome">
+    <section class="avaliacao">
+        <!-- Título da seção de avaliação -->
+        <h3>Avalie a Pousada Flor de Lótus Cipó</h3>
+        <p>Deixe sua avaliação:</p>
+        <div>
+            <!-- Formulário de avaliação -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Seu nome">
 
-        <label for="sobrenome">Sobrenome:</label>
-        <input type="text" id="sobrenome" placeholder="Seu sobrenome">
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" placeholder="Seu sobrenome">
 
-        <!-- Alteração do rótulo para refletir a escala de 0 a 5 -->
-        <label for="nota">Avaliação (de 0 a 5 estrelas):</label>
-        <input type="number" id="nota" min="0" max="5">
+            <!-- Alteração do rótulo para refletir a escala de 0 a 5 -->
+            <label for="nota">Avaliação (de 0 a 5 estrelas):</label>
+            <input type="number" id="nota" min="0" max="5">
 
-        <!-- Botões para avaliar, resetar histórico e mostrar histórico -->
-        <button onclick="adicionarAvaliacao()">Avaliar</button>
-        <button onclick="resetarHistoricoAvaliacoes()">Resetar Histórico</button>
-        <button class="mostrar-historico">Mostrar Histórico</button>
-    </div>
+            <!-- Botões para avaliar, resetar histórico e mostrar histórico -->
+            <button onclick="adicionarAvaliacao()">Avaliar</button>
+            <button onclick="resetarHistoricoAvaliacoes()">Resetar Histórico</button>
+            <button class="mostrar-historico">Mostrar Histórico</button>
+        </div>
 
-    <!-- Local para exibir o histórico de avaliações -->
-    <div id="historico-avaliacoes" style="display: none;">
-        <!-- Aqui será exibido o histórico de avaliações -->
-    </div>
+        <!-- Local para exibir o histórico de avaliações -->
+        <div id="historico-avaliacoes" style="display: none;">
+            <!-- Aqui será exibido o histórico de avaliações -->
+        </div>
 
-    <!-- Local para exibir a média das avaliações -->
-    <div id="media-avaliacoes">
-        <!-- Aqui será exibida a média das avaliações -->
-    </div>
-
-</section>
+        <!-- Local para exibir a média das avaliações -->
+        <div id="media-avaliacoes">
+            <!-- Aqui será exibida a média das avaliações -->
+        </div>
+    </section>
 
     <!-- Rodapé da página -->
     <footer>
         <p>&copy; 2023 EcoTour. Todos os direitos reservados. <u>Dev by Rodrigo Tavares</u></p>
     </footer>
-    <script>
+<script>
         // Senha para acessar o botão de resetar histórico
         const senhaResetarHistorico = "1234";
     

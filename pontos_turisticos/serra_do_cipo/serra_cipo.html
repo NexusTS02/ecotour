@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Configuração básica da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos da página -->
     <link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="../bonito_ms/bonito.css">
+    <link rel="stylesheet" href="../serra_do_cipo/serra_cipo.css"> <!-- Estilo específico para Serra do Cipó -->
+    <!-- Ícone da página -->
     <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <!-- Título da página -->
     <title>Serra do Cipo-MG</title>
+    <!-- Estilo adicional para centralizar os quadrados -->
+    <style>
+        .quadrado {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
+    <!-- Cabeçalho da página -->
     <header>
         <div class="logo">
+            <!-- Logo e título -->
             <img src="../../imagens/logo/logo.png" alt="Logo EcoTour">
             <h1 style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">EcoTour</h1>
         </div>
     </header>
     
+    <!-- Barra de navegação -->
     <nav class="menu">
         <ul>
+            <!-- Links para diferentes seções da página -->
             <li><a href="../../index.html">Início</a></li>
             <li><a href="../../dicas_eco.html">Dicas Eco</a></li>
             <li class="submenu">
+                <!-- Menu suspenso de Locais Turísticos -->
                 <a href="#">Locais Turísticos</a>
                 <ul class="submenu-list">
                     <!-- Links para destinos turísticos específicos -->
@@ -36,32 +54,38 @@
         </ul>
     </nav>
 
-    <!-- Quadrado 1 - Eco Park Porto da Ilha -->
-    <div class="quadrado1">
-        <div class="conteudo">
-            <h3>Pousada Flor de Lótus Cipó</h3>
+    <!-- Seção principal da página -->
+    <section>
+        <!-- Quadrado 1 - Pousada Flor de Lótus Cipó -->
+        <div class="quadrado">
+            <div class="conteudo">
+                <!-- Título e imagem da Pousada Flor de Lótus Cipó -->
+                <h3>Pousada Flor de Lótus Cipó</h3>
                 <a href="pontos_serra_cipo/pousada_lótus.html"><img src="../../imagens/pontos turisticos/serra do cipo/pousada lotus/4.jpg" alt="Pousada Flor de Lótus Cipó"></a>
-            <div class="overlay">
-                <ul>
-                    <p>Algumas informações, para mais detalhes clique na imagem!</p>
-                    <li><strong>Minimização de Resíduos:</strong> Redução notável na produção de lixo e eliminação de plásticos descartáveis.</li>
-                    <li><strong>Sensibilidade ao Desperdício de Alimentos:</strong> Medidas abrangentes para reduzir o desperdício alimentar, desde educação até reciclagem.</li>
-                    <li><strong>Uso Sustentável da Água:</strong> Gestão eficiente para benefício ambiental e econômico.</li>
-                    <li><strong>Envolvimento Local:</strong> Priorização de alimentos regionais para apoiar a comunidade.</li>
-                    <li><strong>Iluminação Eficiente:</strong> Uso de lâmpadas LED de baixo consumo para práticas energéticas sustentáveis.</li>
-                    <li><strong>Energia Renovável:</strong> Utilização de energia fotovoltaica para sustentabilidade energética.</li>
-                    <li><strong>Respeito à Vida Silvestre:</strong> Ausência de animais silvestres em cativeiro e preservação da fauna.</li>
-                </ul>
+                <div class="overlay">
+                    <!-- Descrição e informações sobre a Pousada Flor de Lótus Cipó -->
+                    <ul>
+                        <p>Algumas informações, para mais detalhes clique na imagem!</p>
+                        <li><strong>Minimização de Resíduos:</strong> Redução notável na produção de lixo e eliminação de plásticos descartáveis.</li>
+                        <li><strong>Sensibilidade ao Desperdício de Alimentos:</strong> Medidas abrangentes para reduzir o desperdício alimentar, desde educação até reciclagem.</li>
+                        <li><strong>Uso Sustentável da Água:</strong> Gestão eficiente para benefício ambiental e econômico.</li>
+                        <li><strong>Envolvimento Local:</strong> Priorização de alimentos regionais para apoiar a comunidade.</li>
+                        <li><strong>Iluminação Eficiente:</strong> Uso de lâmpadas LED de baixo consumo para práticas energéticas sustentáveis.</li>
+                        <li><strong>Energia Renovável:</strong> Utilização de energia fotovoltaica para sustentabilidade energética.</li>
+                        <li><strong>Respeito à Vida Silvestre:</strong> Ausência de animais silvestres em cativeiro e preservação da fauna.</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    
-        <!-- Quadrado 2 - Rio Sucuri -->
-        <div class="quadrado2">
+
+        <!-- Quadrado 2 - Cachoeira do Tabuleiro -->
+        <div class="quadrado">
             <div class="conteudo">
+                <!-- Título e imagem da Cachoeira do Tabuleiro -->
                 <h3>Cachoeira do Tabuleiro</h3>
-                <a href="pontos_serra_cipo/cachoeira_tabuleiro.html"><img src="../../imagens/pontos turisticos/serra do cipo/cachoeira tabuleiro/2.jpg" alt="Cachoeira do Tabuleiro "></a>
+                <a href="pontos_serra_cipo/cachoeira_tabuleiro.html"><img src="../../imagens/pontos turisticos/serra do cipo/cachoeira tabuleiro/2.jpg" alt="Cachoeira do Tabuleiro"></a>
                 <div class="overlay">
+                    <!-- Descrição e informações sobre a Cachoeira do Tabuleiro -->
                     <ul>
                         <p>Algumas informações, para mais detalhes clique na imagem!</p>
                         <li><strong>Localização:</strong> Distrito de Tabuleiro MG, a 19 km de Conceição do Mato Dentro.</li>
@@ -77,10 +101,11 @@
                 </div>
             </div>
         </div>
-        
+    </section>
+    
+    <!-- Rodapé da página -->
     <footer>
         <p>&copy; 2023 EcoTour. Todos os direitos reservados. <u>Dev by Rodrigo Tavares</u></p>
     </footer>
-
 </body>
 </html>

@@ -1,10 +1,10 @@
-
+/* Estilos para o quadrado1 */
 .quadrado1 {
     background-color: white;
     position: relative;
     overflow: hidden;
-    height: 1010px;
-    max-width:820px;
+    height: 1010px; /* Altura fixa para o quadrado1 */
+    max-width: 820px;
     margin: 20px 2.5%;
     border: 3px solid #333;
     box-sizing: border-box;
@@ -77,12 +77,13 @@
     position: absolute;
 }
 
+/* Estilos para o quadrado2 (mesmos estilos do quadrado1, repetidos para manter separação) */
 .quadrado2 {
     background-color: white;
     position: relative;
     overflow: hidden;
-    height: 1010px;
-    max-width:820px;
+    height: 1010px; /* Altura fixa para o quadrado2 */
+    max-width: 820px;
     margin: 20px 2.5%;
     border: 3px solid #333;
     box-sizing: border-box;
@@ -154,11 +155,13 @@
     margin-left: -1em;
     position: absolute;
 }
+
+/* Estilos para o quadrado (reaproveitando estilos do quadrado1) */
 .quadrado {
     background-color: white;
     position: relative;
     overflow: hidden;
-    height: 950px;
+    height: 950px; /* Altura fixa para o quadrado */
     margin: 20px 2.5%;
     border: 3px solid #333;
     box-sizing: border-box;

@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <!-- Configuração básica da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Links para os estilos -->
-    <link rel="stylesheet" href="../../../style.css"> 
+    <link rel="stylesheet" href="../../../style.css">
     <link rel="stylesheet" href="../../../pontos.css">
-    
+
     <!-- Título da página -->
     <title>Cachoeira da Fumaça</title>
 </head>
+
 <body data-pagina-identificador="pagina3">
     <!-- Cabeçalho da página -->
     <header>
@@ -47,20 +49,20 @@
 
     <!-- Seção principal da página -->
     <section>
-        <!-- Quadrado - Eco Park Porto da Ilha -->
+        <!-- Quadrado - Cachoeira da Fumaça -->
         <div class="quadrado centralizado">
             <div class="conteudo">
-                <!-- Título e imagem do Eco Park -->
+                <!-- Título e imagem da Cachoeira da Fumaça -->
                 <h3>Cachoeira da Fumaça</h3>
                 <img src="../../../imagens/pontos turisticos/chapada/cachoeira fumaça/3.jpg" alt="Cachoeira da Fumaça">
                 <div class="overlay">
-                    <!-- Descrição e informações sobre o Eco Park -->
+                    <!-- Descrição e informações sobre a Cachoeira da Fumaça -->
                     <h1>Cachoeira da Fumaça - Beleza Imponente na Chapada Diamantina</h1>
 
                     <p>Explore a majestosa Cachoeira da Fumaça, com seus 340 metros de queda d’água, inserida no deslumbrante cenário da Chapada Diamantina. A vista do topo é inesquecível, compensando a trilha desafiadora.</p>
-                
+
                     <p>A Cachoeira da Fumaça, por cima, oferece uma experiência única, mas desafiadora. Recomenda-se guia para a trilha média. Agências locais oferecem passeios, geralmente incluindo transporte, lanche e banho no Riachinho. Prefira sair do Vale do Capão para economizar e reduzir desgaste.</p>
-                
+
                     <p><strong>Distância de Carro:</strong> 3 km do Vale do Capão, 80 km de Lençóis</p>
                     <p><strong>Nível de Dificuldade:</strong> Médio, com subida íngreme inicial</p>
                     <p><strong>Custo do Passeio:</strong> Entre R$ 150 e R$ 190 em agências</p>
@@ -68,49 +70,50 @@
                     <p><strong>Dica:</strong> Em épocas chuvosas, leve calçado adequado para trechos alagados; em estiagem, a cachoeira pode ter menos água.</p>
                 </div>
                 <!-- Botão Saiba Mais -->
-                
+
             </div>
         </div>
 
-        <!-- Mapa do Eco Park -->
+        <!-- Mapa da Cachoeira da Fumaça -->
         <div class="mapa centralizado">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209511.9742767086!2d-41.664630742200536!3d-12.646845749561342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x74208bdb856b475%3A0x7d4f816eca24b6ef!2sCachoeira%20da%20Fuma%C3%A7a!5e0!3m2!1spt-BR!2sbr!4v1700577061151!5m2!1spt-BR!2sbr"width="100%" height="300" style="border: 0px solid #333;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209511.9742767086!2d-41.664630742200536!3d-12.646845749561342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x74208bdb856b475%3A0x7d4f816eca24b6ef!2sCachoeira%20da%20Fuma%C3%A7a!5e0!3m2!1spt-BR!2sbr!4v1700577061151!5m2!1spt-BR!2sbr" width="100%" height="300" style="border: 0px solid #333;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
-   <!-- Seção de Avaliação -->
-<section class="avaliacao">
-    <!-- Título da seção de avaliação -->
-    <h3>Avalie a Cachoeira da Fumaça</h3>
-    <p>Deixe sua avaliação:</p>
-    <div>
-        <!-- Formulário de avaliação -->
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" placeholder="Seu nome">
 
-        <label for="sobrenome">Sobrenome:</label>
-        <input type="text" id="sobrenome" placeholder="Seu sobrenome">
+    <!-- Seção de Avaliação -->
+    <section class="avaliacao">
+        <!-- Título da seção de avaliação -->
+        <h3>Avalie a Cachoeira da Fumaça</h3>
+        <p>Deixe sua avaliação:</p>
+        <div>
+            <!-- Formulário de avaliação -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Seu nome">
 
-        <!-- Alteração do rótulo para refletir a escala de 0 a 5 -->
-        <label for="nota">Avaliação (de 0 a 5 estrelas):</label>
-        <input type="number" id="nota" min="0" max="5">
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" placeholder="Seu sobrenome">
 
-        <!-- Botões para avaliar, resetar histórico e mostrar histórico -->
-        <button onclick="adicionarAvaliacao()">Avaliar</button>
-        <button onclick="resetarHistoricoAvaliacoes()">Resetar Histórico</button>
-        <button class="mostrar-historico">Mostrar Histórico</button>
-    </div>
+            <!-- Alteração do rótulo para refletir a escala de 0 a 5 -->
+            <label for="nota">Avaliação (de 0 a 5 estrelas):</label>
+            <input type="number" id="nota" min="0" max="5">
 
-    <!-- Local para exibir o histórico de avaliações -->
-    <div id="historico-avaliacoes" style="display: none;">
-        <!-- Aqui será exibido o histórico de avaliações -->
-    </div>
+            <!-- Botões para avaliar, resetar histórico e mostrar histórico -->
+            <button onclick="adicionarAvaliacao()">Avaliar</button>
+            <button onclick="resetarHistoricoAvaliacoes()">Resetar Histórico</button>
+            <button class="mostrar-historico">Mostrar Histórico</button>
+        </div>
 
-    <!-- Local para exibir a média das avaliações -->
-    <div id="media-avaliacoes">
-        <!-- Aqui será exibida a média das avaliações -->
-    </div>
+        <!-- Local para exibir o histórico de avaliações -->
+        <div id="historico-avaliacoes" style="display: none;">
+            <!-- Aqui será exibido o histórico de avaliações -->
+        </div>
 
-</section>
+        <!-- Local para exibir a média das avaliações -->
+        <div id="media-avaliacoes">
+            <!-- Aqui será exibida a média das avaliações -->
+        </div>
+
+    </section>
 
     <!-- Rodapé da página -->
     <footer>

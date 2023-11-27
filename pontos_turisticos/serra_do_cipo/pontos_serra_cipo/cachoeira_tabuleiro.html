@@ -47,70 +47,70 @@
 
     <!-- Seção principal da página -->
     <section>
-        <!-- Quadrado - Eco Park Porto da Ilha -->
+        <!-- Quadrado - Cachoeira do Tabuleiro -->
         <div class="quadrado centralizado">
             <div class="conteudo">
-                <!-- Título e imagem do Eco Park -->
-                <h3>Cachoeira do Tabuleiro </h3>
+                <!-- Título e imagem da Cachoeira do Tabuleiro -->
+                <h3>Cachoeira do Tabuleiro</h3>
                 <img src="../../../imagens/pontos turisticos/serra do cipo/cachoeira tabuleiro/1.jpg" alt="Cachoeira do Tabuleiro">
                 <div class="overlay">
-                    <!-- Descrição e informações sobre o Eco Park -->
+                    <!-- Descrição e informações sobre a Cachoeira do Tabuleiro -->
                     <p>Localizada no Parque Natural Municipal do Tabuleiro, no Parque Estadual da Serra Geral do Intendente, a Cachoeira do Tabuleiro é a mais alta de Minas Gerais e a terceira do Brasil, com impressionantes 273 metros de queda livre. O cenário monumental inclui um poço de cerca de 20 metros de profundidade, rodeado por blocos e paredões multicoloridos.</p>
 
                     <p>A vegetação na região é predominantemente de campo rupestre, com capões de mata atlântica e espécies de cerrado. O córrego Ribeirão do Campo, que deu nome ao Parque, forma piscinas naturais até encontrar o Rio Preto.</p>
                 
                     <p>Conhecida como a 'cachoeira do coração', a Cachoeira do Tabuleiro encanta os visitantes com sua beleza única. Jardins naturais com orquídeas e bromélias gigantes complementam a paisagem deslumbrante.</p>
                 
-                    </ul>
                 </div>               
             </div>
         </div>
 
-        <!-- Mapa do Eco Park -->
+        <!-- Mapa da Cachoeira do Tabuleiro -->
         <div class="mapa centralizado">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55318.80433851311!2d-43.60459682995438!3d-19.092336363179253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaf5d3b3588fba7%3A0x7c6636fbe8055a66!2sCachoeira%20do%20Tabuleiro!5e0!3m2!1spt-BR!2sbr!4v1700671032369!5m2!1spt-BR!2sbr"width="100%" height="300" style="border: 0px solid #333;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55318.80433851311!2d-43.60459682995438!3d-19.092336363179253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaf5d3b3588fba7%3A0x7c6636fbe8055a66!2sCachoeira%20do%20Tabuleiro!5e0!3m2!1spt-BR!2sbr!4v1700671032369!5m2!1spt-BR!2sbr" width="100%" height="300" style="border: 0px solid #333;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
-   <!-- Seção de Avaliação -->
-<section class="avaliacao">
-    <!-- Título da seção de avaliação -->
-    <h3>Avalie a Cachoeira do Tabuleiro </h3>
-    <p>Deixe sua avaliação:</p>
-    <div>
-        <!-- Formulário de avaliação -->
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" placeholder="Seu nome">
 
-        <label for="sobrenome">Sobrenome:</label>
-        <input type="text" id="sobrenome" placeholder="Seu sobrenome">
+    <!-- Seção de Avaliação -->
+    <section class="avaliacao">
+        <!-- Título da seção de avaliação -->
+        <h3>Avalie a Cachoeira do Tabuleiro</h3>
+        <p>Deixe sua avaliação:</p>
+        <div>
+            <!-- Formulário de avaliação -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Seu nome">
 
-        <!-- Alteração do rótulo para refletir a escala de 0 a 5 -->
-        <label for="nota">Avaliação (de 0 a 5 estrelas):</label>
-        <input type="number" id="nota" min="0" max="5">
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" placeholder="Seu sobrenome">
 
-        <!-- Botões para avaliar, resetar histórico e mostrar histórico -->
-        <button onclick="adicionarAvaliacao()">Avaliar</button>
-        <button onclick="resetarHistoricoAvaliacoes()">Resetar Histórico</button>
-        <button class="mostrar-historico">Mostrar Histórico</button>
-    </div>
+            <!-- Alteração do rótulo para refletir a escala de 0 a 5 -->
+            <label for="nota">Avaliação (de 0 a 5 estrelas):</label>
+            <input type="number" id="nota" min="0" max="5">
 
-    <!-- Local para exibir o histórico de avaliações -->
-    <div id="historico-avaliacoes" style="display: none;">
-        <!-- Aqui será exibido o histórico de avaliações -->
-    </div>
+            <!-- Botões para avaliar, resetar histórico e mostrar histórico -->
+            <button onclick="adicionarAvaliacao()">Avaliar</button>
+            <button onclick="resetarHistoricoAvaliacoes()">Resetar Histórico</button>
+            <button class="mostrar-historico">Mostrar Histórico</button>
+        </div>
 
-    <!-- Local para exibir a média das avaliações -->
-    <div id="media-avaliacoes">
-        <!-- Aqui será exibida a média das avaliações -->
-    </div>
+        <!-- Local para exibir o histórico de avaliações -->
+        <div id="historico-avaliacoes" style="display: none;">
+            <!-- Aqui será exibido o histórico de avaliações -->
+        </div>
 
-</section>
+        <!-- Local para exibir a média das avaliações -->
+        <div id="media-avaliacoes">
+            <!-- Aqui será exibida a média das avaliações -->
+        </div>
+    </section>
 
     <!-- Rodapé da página -->
     <footer>
         <p>&copy; 2023 EcoTour. Todos os direitos reservados. <u>Dev by Rodrigo Tavares</u></p>
     </footer>
-    <script>
+
+<script>
         // Senha para acessar o botão de resetar histórico
         const senhaResetarHistorico = "1234";
     

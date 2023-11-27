@@ -47,14 +47,14 @@
 
     <!-- Seção principal da página -->
     <section>
-        <!-- Quadrado - Eco Park Porto da Ilha -->
+        <!-- Quadrado - Vale do Capão -->
         <div class="quadrado centralizado">
             <div class="conteudo">
-                <!-- Título e imagem do Eco Park -->
+                <!-- Título e imagem do Vale do Capão -->
                 <h3>Vale do Capão</h3>
                 <img src="../../../imagens/pontos turisticos/chapada/capao/1.jpg" alt="Vale do Capão">
                 <div class="overlay">
-                    <!-- Descrição e informações sobre o Eco Park -->
+                    <!-- Descrição e informações sobre o Vale do Capão -->
                     <p>Conhecido como Caeté Açu, o Vale do Capão é um local mítico, atraindo viajantes alternativos na Chapada Diamantina. Este vilarejo, imerso na exuberante natureza, tem uma atmosfera esotérica que cativa turistas em busca de contato direto com as belezas da região.</p>
 
                     <p>A vila encanta pelos habitantes, pelas pousadas integradas à natureza e pelas atrações da Chapada Diamantina, tendo o Vale do Capão como ponto de partida.</p>
@@ -62,50 +62,49 @@
                     <p>Passar alguns dias no Vale do Capão é sinônimo de relaxamento. A vila oferece tratamentos para corpo e alma, desde massagens até tratamentos holísticos. À noite, conheça pessoas, saboreie uma boa cerveja e experimente a renomada pizza da Pizzaria Capão Grande.</p>
 
                     <p>Visitantes têm fácil acesso a atrações como a Cachoeira da Fumaça, o Vale do Pati e a trilha das Águas Claras. A estadia é uma oportunidade de economizar em deslocamentos e desfrutar da atmosfera única do Vale do Capão, o local mais místico da Chapada Diamantina.</p>
-                </body>
                 </div>               
             </div>
         </div>
 
-        <!-- Mapa do Eco Park -->
+        <!-- Mapa do Vale do Capão -->
         <div class="mapa centralizado">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d421.27740358840765!2d-41.497618006125464!3d-12.59596224747852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x74209378cb72a9f%3A0xbe177bb041b30534!2sVale%20do%20Cap%C3%A3o%2C%20Palmeiras%2C%20Chapada%20Diamantina%2C%20Bahia!5e0!3m2!1spt-BR!2sbr!4v1700577494930!5m2!1spt-BR!2sbr"width="100%" height="300" style="border: 0px solid #333;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
-   <!-- Seção de Avaliação -->
-<section class="avaliacao">
-    <!-- Título da seção de avaliação -->
-    <h3>Avalie o Vale do Capão</h3>
-    <p>Deixe sua avaliação:</p>
-    <div>
-        <!-- Formulário de avaliação -->
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" placeholder="Seu nome">
 
-        <label for="sobrenome">Sobrenome:</label>
-        <input type="text" id="sobrenome" placeholder="Seu sobrenome">
+    <!-- Seção de Avaliação -->
+    <section class="avaliacao">
+        <!-- Título da seção de avaliação -->
+        <h3>Avalie o Vale do Capão</h3>
+        <p>Deixe sua avaliação:</p>
+        <div>
+            <!-- Formulário de avaliação -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Seu nome">
 
-        <!-- Alteração do rótulo para refletir a escala de 0 a 5 -->
-        <label for="nota">Avaliação (de 0 a 5 estrelas):</label>
-        <input type="number" id="nota" min="0" max="5">
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" placeholder="Seu sobrenome">
 
-        <!-- Botões para avaliar, resetar histórico e mostrar histórico -->
-        <button onclick="adicionarAvaliacao()">Avaliar</button>
-        <button onclick="resetarHistoricoAvaliacoes()">Resetar Histórico</button>
-        <button class="mostrar-historico">Mostrar Histórico</button>
-    </div>
+            <!-- Alteração do rótulo para refletir a escala de 0 a 5 -->
+            <label for="nota">Avaliação (de 0 a 5 estrelas):</label>
+            <input type="number" id="nota" min="0" max="5">
 
-    <!-- Local para exibir o histórico de avaliações -->
-    <div id="historico-avaliacoes" style="display: none;">
-        <!-- Aqui será exibido o histórico de avaliações -->
-    </div>
+            <!-- Botões para avaliar, resetar histórico e mostrar histórico -->
+            <button onclick="adicionarAvaliacao()">Avaliar</button>
+            <button onclick="resetarHistoricoAvaliacoes()">Resetar Histórico</button>
+            <button class="mostrar-historico">Mostrar Histórico</button>
+        </div>
 
-    <!-- Local para exibir a média das avaliações -->
-    <div id="media-avaliacoes">
-        <!-- Aqui será exibida a média das avaliações -->
-    </div>
+        <!-- Local para exibir o histórico de avaliações -->
+        <div id="historico-avaliacoes" style="display: none;">
+            <!-- Aqui será exibido o histórico de avaliações -->
+        </div>
 
-</section>
+        <!-- Local para exibir a média das avaliações -->
+        <div id="media-avaliacoes">
+            <!-- Aqui será exibida a média das avaliações -->
+        </div>
+    </section>
 
     <!-- Rodapé da página -->
     <footer>

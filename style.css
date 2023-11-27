@@ -1,19 +1,23 @@
+
+/* Reset de estilos padrão do navegador */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #FDF5E6;
+    background-color: #FDF5E6; /* Cor de fundo padrão */
 }
 
+/* Estilos para o cabeçalho */
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #11111f;
+    background-color: #11111f; /* Cor de fundo do cabeçalho */
     color: white;
     text-align: center;
     padding: 10px;
 }
 
+/* Estilos para o logotipo no cabeçalho */
 .logo {
     display: flex;
     align-items: center;
@@ -28,11 +32,13 @@ header {
     margin: 0;
     color: white;
 }
+
+/* Estilos para o menu de navegação */
 .menu {
-    background-color: #47d7ac;
+    background-color: #47d7ac; /* Cor de fundo do menu */
     padding: 15px 25px;
     text-align: center;
-    border: 2px solid #000000;
+    border: 2px solid #000000; /* Cor da borda do menu */
     position: relative;
 }
 
@@ -52,7 +58,7 @@ header {
     padding: 15px 25px;
     text-decoration: none;
     color: #11111f;
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out;
     font-size: 0.3s ease-in-out;
 }
 
@@ -64,20 +70,21 @@ header {
     transform: scale(1.1);
     font-size: 1.1em;
 }
+
 .menu li:hover .submenu {
-    display: block; /* Alteração para 'block' ao passar o mouse sobre o item do menu */
+    display: block; /* Exibição do submenu ao passar o mouse sobre o item do menu */
 }
 
-
+/* Estilos para o submenu */
 .submenu {
-    display: none; 
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     z-index: 1;
     min-width: 160px;
-    
 }
+
 .submenu-list {
     display: none;
     position: absolute;
@@ -88,16 +95,16 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
+
 .submenu-list a {
     display: block; /* Ocupar toda a largura do item do submenu */
-    padding: 5px; /* Adicione algum espaço ao redor do texto para um clique mais fácil */
+    padding: 5px; /* Adicionar algum espaço ao redor do texto para um clique mais fácil */
     text-decoration: none;
     color: #11111f;
 }
 
 .submenu:hover .submenu-list {
     display: block;
-    
 }
 
 .submenu-list li {
@@ -107,11 +114,13 @@ header {
     width: 280px;
     white-space: nowrap;
 }
+
 .submenu-list li:hover {
     background-color: #11111f;
 }
 
-#destaques {
+/* Estilos para o destaque */
+#destaqueççs {
     padding: 30px;
     text-align: center;
     background-color: #f5f5f5;
@@ -140,6 +149,7 @@ header {
     margin-bottom: 20px;
 }
 
+/* Estilos para o contêiner */
 .container {
     text-align: center;
     background-color: #f5f5f5;
@@ -148,12 +158,13 @@ header {
     border: 2px solid #11111f;
 }
 
-.container h2{
+.container h2 {
     font-size: 35px;
     padding: 20px;
     display: inline-block;
 }
 
+/* Estilos para o wrapper de destinos */
 .destinos-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -161,6 +172,7 @@ header {
     align-items: center;
 }
 
+/* Estilos para o destino */
 .destino {
     position: relative;
     overflow: hidden;
@@ -180,6 +192,7 @@ header {
     transform: scale(1.1);
 }
 
+/* Estilos para a informação do destino */
 .destino-info {
     position: absolute;
     bottom: 0;
@@ -204,6 +217,7 @@ header {
     text-decoration: underline;
 }
 
+/* Estilos para o rodapé */
 footer {
     background-color: #333;
     color: white;
@@ -215,6 +229,7 @@ footer p {
     margin: 0;
 }
 
+/* Estilos para os blocos de conteúdo */
 .content-block {
     text-align: center;
     background-color: #f5f5f5;
@@ -223,7 +238,7 @@ footer p {
     border: 2px solid #11111f;
 }
 
-.content-block p{
+.content-block p {
     font-size: 18px;
     padding: 5px;
 }
@@ -242,6 +257,7 @@ footer p {
     margin-bottom: 10px;
 }
 
+/* Estilos para as dicas ecológicas */
 .dicas-eco {
     text-align: center;
     background-color: #f5f5f5;
@@ -249,6 +265,8 @@ footer p {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border: 2px solid #11111f;
     padding: 20px;
+
+
 }
 
 .dicas-eco p {
@@ -258,7 +276,7 @@ footer p {
 }
 
 .dicas-eco ul {
-   list-style: none;
+    list-style: none;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -283,7 +301,8 @@ footer p {
     margin-left: -1em;
     position: absolute;
 }
-/* Adicione o estilo para o formulário de cadastro */
+
+/* Estilos para o formulário de cadastro */
 .cadastro {
     background-color: white;
     position: relative;
@@ -301,7 +320,6 @@ footer p {
 }
 
 .cadastro form {
-
     flex-direction: column;
     align-items: center;
 }
@@ -309,7 +327,6 @@ footer p {
 .cadastro label {
     margin-bottom: 5px;
     font-size: 16px;
-    
 }
 
 .cadastro input {
@@ -333,7 +350,7 @@ footer p {
     color: #ffffff;
 }
 
-/* Adicione o estilo para a mensagem */
+/* Estilos para a mensagem no formulário de cadastro */
 .cadastro .mensagem {
     font-size: 14px;
     color: #666;

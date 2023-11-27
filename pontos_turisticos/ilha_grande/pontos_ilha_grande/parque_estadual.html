@@ -47,70 +47,70 @@
 
     <!-- Seção principal da página -->
     <section>
-        <!-- Quadrado - Eco Park Porto da Ilha -->
+        <!-- Quadrado - Parque Estadual da Ilha Grande -->
         <div class="quadrado centralizado">
             <div class="conteudo">
-                <!-- Título e imagem do Eco Park -->
+                <!-- Título e imagem do Parque Estadual da Ilha Grande -->
                 <h3>Parque Estadual da Ilha Grande</h3>
                 <img src="../../../imagens/pontos turisticos/ilha grande/6.jpg" alt="Parque Estadual da Ilha Grande">
                 <div class="overlay">
-                    <!-- Descrição e informações sobre o Eco Park -->
+                    <!-- Descrição e informações sobre o Parque Estadual da Ilha Grande -->
                     <p>
-                        <p>O Parque Nacional da Ilha Grande é um tesouro natural que se estende por uma paisagem deslumbrante, composta por mais de dez praias, costões rochosos, florestas exuberantes e uma intrincada rede de trilhas. Essa área oferece uma variedade única de experiências, desde aventuras aquáticas até momentos serenos de contemplação.</p>
+                        O Parque Nacional da Ilha Grande é um tesouro natural que se estende por uma paisagem deslumbrante, composta por mais de dez praias, costões rochosos, florestas exuberantes e uma intrincada rede de trilhas. Essa área oferece uma variedade única de experiências, desde aventuras aquáticas até momentos serenos de contemplação.
 
-                        <p>Destacando-se entre suas joias, a <strong>Praia Lopes Mendes</strong> se destaca como uma das mais belas do mundo, com sua extensa faixa de areia e mar propício para o surf. A <strong>Praia Caxadaço</strong>, protegida por costões, oferece um refúgio intocado, acessível por trilha ou barco.</p>
+                        Destacando-se entre suas joias, a <strong>Praia Lopes Mendes</strong> se destaca como uma das mais belas do mundo, com sua extensa faixa de areia e mar propício para o surf. A <strong>Praia Caxadaço</strong>, protegida por costões, oferece um refúgio intocado, acessível por trilha ou barco.
                     
-                        <p>Para os amantes de trilhas desafiadoras, o <strong>Pico do Papagaio</strong> é um convite a vistas panorâmicas deslumbrantes. A <strong>Cachoeira da Feiticeira</strong>, com sua queda d'água imponente, é uma parada refrescante após uma caminhada pela mata preservada. E o <strong>Circuito Abraão</strong>, uma trilha suave, leva os visitantes a pontos imperdíveis no coração do parque.</p>
-                    </ul>
+                        Para os amantes de trilhas desafiadoras, o <strong>Pico do Papagaio</strong> é um convite a vistas panorâmicas deslumbrantes. A <strong>Cachoeira da Feiticeira</strong>, com sua queda d'água imponente, é uma parada refrescante após uma caminhada pela mata preservada. E o <strong>Circuito Abraão</strong>, uma trilha suave, leva os visitantes a pontos imperdíveis no coração do parque.
+                    </p>
                 </div>               
             </div>
         </div>
 
-        <!-- Mapa do Eco Park -->
+        <!-- Mapa do Parque Estadual da Ilha Grande -->
         <div class="mapa centralizado">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82996.43140000202!2d-44.256759313914465!3d-23.17170682072991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdce4a29b760eb%3A0xc02ffae7313caec1!2sParque%20Estadual%20de%20Ilha%20Grande!5e0!3m2!1spt-BR!2sbr!4v1700671480204!5m2!1spt-BR!2sbr"width="100%" height="300" style="border: 0px solid #333;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82996.43140000202!2d-44.256759313914465!3d-23.17170682072991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdce4a29b760eb%3A0xc02ffae7313caec1!2sParque%20Estadual%20de%20Ilha%20Grande!5e0!3m2!1spt-BR!2sbr!4v1700671480204!5m2!1spt-BR!2sbr" width="100%" height="300" style="border: 0px solid #333;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
+
    <!-- Seção de Avaliação -->
-<section class="avaliacao">
-    <!-- Título da seção de avaliação -->
-    <h3>Avalie o Parque Estadual da Ilha Grande</h3>
-    <p>Deixe sua avaliação:</p>
-    <div>
-        <!-- Formulário de avaliação -->
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" placeholder="Seu nome">
+    <section class="avaliacao">
+        <!-- Título da seção de avaliação -->
+        <h3>Avalie o Parque Estadual da Ilha Grande</h3>
+        <p>Deixe sua avaliação:</p>
+        <div>
+            <!-- Formulário de avaliação -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Seu nome">
 
-        <label for="sobrenome">Sobrenome:</label>
-        <input type="text" id="sobrenome" placeholder="Seu sobrenome">
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" placeholder="Seu sobrenome">
 
-        <!-- Alteração do rótulo para refletir a escala de 0 a 5 -->
-        <label for="nota">Avaliação (de 0 a 5 estrelas):</label>
-        <input type="number" id="nota" min="0" max="5">
+            <!-- Alteração do rótulo para refletir a escala de 0 a 5 -->
+            <label for="nota">Avaliação (de 0 a 5 estrelas):</label>
+            <input type="number" id="nota" min="0" max="5">
 
-        <!-- Botões para avaliar, resetar histórico e mostrar histórico -->
-        <button onclick="adicionarAvaliacao()">Avaliar</button>
-        <button onclick="resetarHistoricoAvaliacoes()">Resetar Histórico</button>
-        <button class="mostrar-historico">Mostrar Histórico</button>
-    </div>
+            <!-- Botões para avaliar, resetar histórico e mostrar histórico -->
+            <button onclick="adicionarAvaliacao()">Avaliar</button>
+            <button onclick="resetarHistoricoAvaliacoes()">Resetar Histórico</button>
+            <button class="mostrar-historico">Mostrar Histórico</button>
+        </div>
 
-    <!-- Local para exibir o histórico de avaliações -->
-    <div id="historico-avaliacoes" style="display: none;">
-        <!-- Aqui será exibido o histórico de avaliações -->
-    </div>
+        <!-- Local para exibir o histórico de avaliações -->
+        <div id="historico-avaliacoes" style="display: none;">
+            <!-- Aqui será exibido o histórico de avaliações -->
+        </div>
 
-    <!-- Local para exibir a média das avaliações -->
-    <div id="media-avaliacoes">
-        <!-- Aqui será exibida a média das avaliações -->
-    </div>
-
-</section>
+        <!-- Local para exibir a média das avaliações -->
+        <div id="media-avaliacoes">
+            <!-- Aqui será exibida a média das avaliações -->
+        </div>
+    </section>
 
     <!-- Rodapé da página -->
     <footer>
         <p>&copy; 2023 EcoTour. Todos os direitos reservados. <u>Dev by Rodrigo Tavares</u></p>
     </footer>
-    <script>
+<script>
         // Senha para acessar o botão de resetar histórico
         const senhaResetarHistorico = "1234";
     

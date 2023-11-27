@@ -57,6 +57,7 @@
                     <!-- Descrição e informações sobre o Eco Park -->
                     <p>Descubra o Eco Parque Porto da Ilha, uma área de conservação ambiental de três hectares que oferece diferentes experiências inesquecíveis para toda a família, misturando diversão e contemplação da natureza.</p>
 
+                    <!-- Lista de informações sobre o Eco Park -->
                     <ul>
                         <li>Possui passeio de bote, caiaque, stand up paddle</li>
                         <li>Possui Bike Boat, Barco Elétrico e Boaia Cross</li>
@@ -68,6 +69,7 @@
                 
                     <p>O Eco Parque Porto da Ilha oferece opções de atividades bem legais para toda a família, divididas em três categorias:</p>
                 
+                    <!-- Lista de atividades categorizadas -->
                     <ul>
                         <li><strong>Relax:</strong> Para quem ama passeios em águas calmas.</li>
                         <li><strong>Galera:</strong> Para quem está viajando com amigos ou família.</li>
@@ -76,7 +78,7 @@
                 
                     <p>Desfrute dos passeios de Bote, Duck e Boia no rio Formoso, além de toda a estrutura de restaurante e conforto para toda a família. Experimente o Day Use no Balneário, aproveite um almoço opcional e viva momentos emocionantes em meio à natureza preservada.</p>
                 </div>
-                <!-- Botão Saiba Mais -->
+                <!-- Botão Saiba Mais (a ser adicionado) -->
                 
             </div>
         </div>
@@ -86,45 +88,47 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.7961070509273!2d-56.389090224741075!3d-21.120693480551687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x947cf7e2736d1f19%3A0xce655a6684dda7ef!2sEco%20Park%20Porto%20da%20Ilha!5e0!3m2!1spt-BR!2sbr!4v1700287578342!5m2!1spt-BR!2sbr" width="100%" height="300" style="border: 0px solid #333;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
-   <!-- Seção de Avaliação -->
-<section class="avaliacao">
-    <!-- Título da seção de avaliação -->
-    <h3>Avalie o Eco Park Porto da Ilha</h3>
-    <p>Deixe sua avaliação:</p>
-    <div>
-        <!-- Formulário de avaliação -->
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" placeholder="Seu nome">
 
-        <label for="sobrenome">Sobrenome:</label>
-        <input type="text" id="sobrenome" placeholder="Seu sobrenome">
+    <!-- Seção de Avaliação -->
+    <section class="avaliacao">
+        <!-- Título da seção de avaliação -->
+        <h3>Avalie o Eco Park Porto da Ilha</h3>
+        <p>Deixe sua avaliação:</p>
+        <div>
+            <!-- Formulário de avaliação -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Seu nome">
 
-        <!-- Alteração do rótulo para refletir a escala de 0 a 5 -->
-        <label for="nota">Avaliação (de 0 a 5 estrelas):</label>
-        <input type="number" id="nota" min="0" max="5">
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" placeholder="Seu sobrenome">
 
-        <!-- Botões para avaliar, resetar histórico e mostrar histórico -->
-        <button onclick="adicionarAvaliacao()">Avaliar</button>
-        <button onclick="resetarHistoricoAvaliacoes()">Resetar Histórico</button>
-        <button class="mostrar-historico">Mostrar Histórico</button>
-    </div>
+            <!-- Alteração do rótulo para refletir a escala de 0 a 5 -->
+            <label for="nota">Avaliação (de 0 a 5 estrelas):</label>
+            <input type="number" id="nota" min="0" max="5">
 
-    <!-- Local para exibir o histórico de avaliações -->
-    <div id="historico-avaliacoes" style="display: none;">
-        <!-- Aqui será exibido o histórico de avaliações -->
-    </div>
+            <!-- Botões para avaliar, resetar histórico e mostrar histórico -->
+            <button onclick="adicionarAvaliacao()">Avaliar</button>
+            <button onclick="resetarHistoricoAvaliacoes()">Resetar Histórico</button>
+            <button class="mostrar-historico">Mostrar Histórico</button>
+        </div>
 
-    <!-- Local para exibir a média das avaliações -->
-    <div id="media-avaliacoes">
-        <!-- Aqui será exibida a média das avaliações -->
-    </div>
+        <!-- Local para exibir o histórico de avaliações -->
+        <div id="historico-avaliacoes" style="display: none;">
+            <!-- Aqui será exibido o histórico de avaliações -->
+        </div>
 
-</section>
+        <!-- Local para exibir a média das avaliações -->
+        <div id="media-avaliacoes">
+            <!-- Aqui será exibida a média das avaliações -->
+        </div>
+    </section>
 
     <!-- Rodapé da página -->
     <footer>
         <p>&copy; 2023 EcoTour. Todos os direitos reservados. <u>Dev by Rodrigo Tavares</u></p>
     </footer>
+
+    <!-- Script para interação com avaliações -->
     <script>
         // Senha para acessar o botão de resetar histórico
         const senhaResetarHistorico = "1234";
